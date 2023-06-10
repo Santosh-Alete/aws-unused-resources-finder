@@ -1,0 +1,21 @@
+aws:
+  regions:
+    - us-east-1
+    - us-west-2
+  
+scanning:
+  ami_unused_days: 90
+  nat_idle_days: 7
+
+costs:
+  ebs_per_gb: 0.10
+  eip_idle: 3.60
+  snapshot_per_gb: 0.05
+  nat_gateway: 32.40
+  alb: 16.20
+  nlb: 22.50
+
+notifications:
+  enabled: true
+  from_email: "aws-scanner@company.com"
+  owner_tag: "Owner"
